@@ -8,6 +8,7 @@ Setup
 =====
 
   * use `npm install peer-ssdp` to install the module.
+  * run example with `node node_modules/peer-ssdp/test/ssdp-test.js`
   
 Usage
 =====
@@ -80,7 +81,7 @@ License
 =======
 
 Free for non commercial use released under the GNU Lesser General Public License v3.0
-See LICENSE file.
+, See LICENSE file.
 
 Contact us for commecial use famecontact@fokus.fraunhofer.de
 
