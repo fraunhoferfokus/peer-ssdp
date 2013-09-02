@@ -22,7 +22,7 @@
  ******************************************************************************/
 
 var os = require('os');
-var ssdp = require("peer-ssdp");
+var ssdp = require("../lib/peer-ssdp");
 var SERVER = os.type() + "/" + os.release() + " UPnP/1.1 famium/0.0.1";
 var uuid = "6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988";
 var peer = ssdp.createPeer();
