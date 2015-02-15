@@ -1,7 +1,7 @@
 {
     "name": "peer-ssdp",
         "description": "Nodejs implementation of the Simple Service Discovery Protocol",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "author": {
         "name": "Louay Bassbouss",
             "email": "louay.bassbouss@fokus.fraunhofer.de"
@@ -16,6 +16,6 @@
         "keywords": ["ssdp", "upnp", "nsd", "network service discovery"],
         "main": "index",
         "readmeFilename": "Readme.md",
-        "_id": "peer-ssdp@0.0.2",
+        "_id": "peer-ssdp@0.0.3",
         "_from": "peer-ssdp@*"
 }
