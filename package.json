@@ -13,6 +13,7 @@
         "name": "Alexander Futasz",
             "email": "alexander.futasz@fokus.fraunhofer.de"
     }],
+        "repository": "https://github.com/fraunhoferfokus/peer-ssdp.git",
         "keywords": ["ssdp", "upnp", "nsd", "network service discovery"],
         "main": "index",
         "readmeFilename": "Readme.md",
