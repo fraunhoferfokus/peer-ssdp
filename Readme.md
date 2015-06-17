@@ -24,12 +24,16 @@ var interval;
 peer.on("ready",function(){
 	// handle ready event
 	// send ssdp:alive messages every 1s
+	// {{networkInterfaceAddress}} will be replaced before
+	// sending the SSDP message with the actual IP Address of the corresponding
+	// Network interface. This is helpful for example in UPnP for LOCATION value
 	interval = setInterval(function(){
 		peer.alive({
 			ST: "upnp:rootdevice",
 			SERVER: "...",
 			ST: headers.ST,
-			USN: "..."
+			USN: "...",
+			LOCATION: "http://{{networkInterfaceAddress}}/device-desc.xml",
 		});
 	}, 1000);
 	// shutdown peer after 10 s and send a ssdp:byebye message before
@@ -51,13 +55,17 @@ peer.on("notify",function(headers, address){
 // param headers is JSON object containing the headers of the SSDP M-SEARCH message as key-value-pair. 
 // param address is the socket address of the sender
 peer.on("search",function(headers, address){
-	//handle search request
-	// reply to search request 
+	// handle search request
+	// reply to search request
+	// Also here the {{networkInterfaceAddress}} will be replaced before
+  // sending the SSDP message with the actual IP Address of the corresponding
+  // Network interface.
 	peer.reply({
 		ST: "upnp:rootdevice",
 		SERVER: "...",
 		ST: headers.ST,
-		USN: "..."
+		USN: "...",
+		LOCATION: "http://{{networkInterfaceAddress}}/device-desc.xml",
 	},address);
 });
 
