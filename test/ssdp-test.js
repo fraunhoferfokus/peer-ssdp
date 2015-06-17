@@ -40,7 +40,7 @@ peer.on("ready", function () {
     console.log("=======================");
     var ST = headers.ST;
     var headers = {
-        LOCATION: "http://0.0.0.0/upnp/devices/6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988/desc.xml",
+        LOCATION: "http://{{networkInterfaceAddress}}/upnp/devices/6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988/desc.xml",
         SERVER: SERVER,
         ST: "upnp:rootdevice",
         USN: "uuid:" + uuid + "::upnp:rootdevice",
@@ -63,7 +63,7 @@ var onReady = function () {
     peer.alive({
         NT: "upnp:rootdevice",
         USN: "uuid:" + uuid + "::upnp:rootdevice",
-        LOCATION: "http://0.0.0.0/upnp/devices/6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988/desc.xml",
+        LOCATION: "http://{{networkInterfaceAddress}}/upnp/devices/6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988/desc.xml",
         SERVER: SERVER
     });
 
@@ -77,7 +77,7 @@ var onReady = function () {
         peer.byebye({
             NT: "upnp:rootdevice",
             USN: "uuid:" + uuid + "::upnp:rootdevice",
-            LOCATION: "http://0.0.0.0/upnp/devices/6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988/desc.xml",
+            LOCATION: "http://{{networkInterfaceAddress}}/upnp/devices/6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb5988/desc.xml",
             SERVER: SERVER
         }, function () {
             peer.close();
