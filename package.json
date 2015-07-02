@@ -1,22 +1,22 @@
 {
     "name": "peer-ssdp",
-        "description": "Nodejs implementation of the Simple Service Discovery Protocol",
-        "version": "0.0.4",
-        "author": {
+    "description": "Nodejs implementation of the Simple Service Discovery Protocol",
+    "version": "0.0.5",
+    "author": {
         "name": "Louay Bassbouss",
-            "email": "louay.bassbouss@fokus.fraunhofer.de"
+        "email": "louay.bassbouss@fokus.fraunhofer.de"
     },
-        "contributors": [{
+    "contributors": [{
         "name": "Martin Lasak",
-            "email": "martin.lasak@fokus.fraunhofer.de"
+        "email": "martin.lasak@fokus.fraunhofer.de"
     }, {
         "name": "Alexander Futasz",
-            "email": "alexander.futasz@fokus.fraunhofer.de"
+        "email": "alexander.futasz@fokus.fraunhofer.de"
     }],
-        "repository": "https://github.com/fraunhoferfokus/peer-ssdp.git",
-        "keywords": ["ssdp", "upnp", "nsd", "network service discovery"],
-        "main": "index",
-        "readmeFilename": "Readme.md",
-        "_id": "peer-ssdp@0.0.4",
-        "_from": "peer-ssdp@*"
+    "repository": "https://github.com/fraunhoferfokus/peer-ssdp.git",
+    "keywords": ["ssdp", "upnp", "nsd", "network service discovery"],
+    "main": "index",
+    "readmeFilename": "Readme.md",
+    "_id": "peer-ssdp@0.0.5",
+    "_from": "peer-ssdp@*"
 }
